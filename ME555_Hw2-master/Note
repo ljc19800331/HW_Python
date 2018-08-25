@@ -1,0 +1,14 @@
+1.plotting problem dynamically
+2.The speed of updating the robot positions for each time step
+3.Possible reference: Matplotlib animation example
+
+ref1:
+https://stackoverflow.com/questions/27589835/matplotlib-update-a-graph-with-new-data-graph-does-not-show
+ref2:
+https://stackoverflow.com/questions/7187504/set-data-and-autoscale-view-matplotlib
+
+guideline:
+1.update xdata and ydata based on each time step
+2.plot the result
+3.The set_data function only works for connected line object
+4.Use remove function to remove the scatter points and redraw the other scatter points

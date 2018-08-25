@@ -1,0 +1,134 @@
+# This script is used to write the code structure
+
+
+Delay simulation 1:
+('The delay_values are ', [1.7749999999999524, 4.259999999999946, 3.999999999999943, 4.494736842105208, 3.624999999999943, 2.495652173912993, 2.686956521739079, 3.8615384615384083, 4.3939393939393385, 5.446153846153787, 4.83414634146336, 5.459090909090853, 3.766666666666611, 7.154166666666616, 4.408695652173858, 5.23529411764701, 4.550943396226365, 9.625925925925888, 5.091228070175387, 5.862295081967155, 7.1399999999999375])
+
+Delay simulation 2:
+ [1.5999999999999563, 4.16666666666661, 2.584615384615338, 3.8272727272726725, 4.055999999999944, 4.690909090909036, 4.471794871794816, 3.6666666666666137, 5.681081081081027, 3.616
+6666666666205, 3.8434782608695146, 4.545454545454489, 4.9499999999999424, 5.277551020408105, 5.02857142857137, 5.4318181818181195, 7.250909090909045, 4.942857142857092, 8.934545454545415, 6.41333333333
+3275, 7.071428571428527]
+
+Delay simulation 3:
+The delay_values are  [4.974999999999945, 4.016666666666613, 4.374999999999947, 4.249999999999943, 3.9133333333332834, 3.949999999999951, 3.278260869565172, 4.510526315789423, 5.399999999999946, 3.9906
+9767441855, 5.2133333333332805, 4.513513513513468, 5.567999999999952, 6.069565217391251, 5.4615384615384, 4.399999999999941, 4.979999999999941, 5.303999999999946, 6.473333333333286, 12.176271186440676,
+ 9.816129032258011]
+
+
+Problem:
+1.collision model -- solved
+2.traffic time clock model -- solved
+3.traffic ligth viz problem -- solved
+4.velocity control model -- solved
+5.traffic light stop problem
+
+Code structure:
+Robot(driver) class: (position, velocity_max, label)
+    property:
+        position
+        position between front and back object
+        distance before intersection = |x-200| |y-200|
+        velocity measured
+        distance measurement before and back
+        Spend time from A to B
+        Expected time from A to B = T = (200 + 200 + 14)/dt
+        Spent distance: How long does the robot run on the lane == velocity*T
+        flag_intersection: 1~8 lanes
+            Robots
+            robots
+    method:
+        update position model: return new position value
+        Delay time model: (spend time - expected time)  return delay time
+        velocity control model:
+        distance estimation forward and backward:
+        Driver model(accerlate + decelerate + collision model) -- Driver behavior
+        collision model (robot ID -1 and +1)
+                dist_front = Robot_A1[i] - Robot_A1[i-1]
+                dist_back = Robot_A1[i] - Robot_A1[i+1]
+            if dis_front < 10 then decelerate
+            if dis_front > 10 accerlate to speed limit
+        traffic control model (flag_light)
+            if dis_intersection < 10 and green and alpha of the green light < 0.1(close to red or not close to red)
+            if dis_intersection > 10 and red
+
+plot function(Robots)
+        The lanes for four intersections
+        The intersection
+        Loop for Robots
+            scatter points
+
+Update class(Robots, delay time):
+    Loop lane Robots
+        Loop robots
+        Visualization of robots (update positions of all the robots)
+            if flag_miss ~= 0
+                update robot positions
+                    update dist_collision (back and front)
+                    update dist_intersection (dist to intersection)
+                update status
+                    if robot.spend distance > 400 flag_miss = 1 otherwise flag_miss = 0
+                    if robot out of range remove the robot class from the robot list
+                        flag_miss = 1
+                update delay time
+                    delay time = delay time + missing robots delay time
+                    N_robots = N_robots + missing robot values
+        Visualization of traffic light(flag_light) -- update show green or red line for the intersection
+            if flag_light = r show r
+            if flag_light = g show g
+    PS: visualization tools -- faster scatter plotting
+    return Robots, delay time
+
+Initialization(Robots):
+    p  = 0.04
+    flag_create = 0/1
+    flag_lane = random(1,8)
+    method: spawn the robot based on probability based on each dt
+                start position [0,y] or [x,0]
+                end position
+            randomly uniformly generate the robots
+                Robot_A1.append(robot class)
+    return: Robots
+
+
+Goal:
+1.Minimize the delay time
+2.cross section model
+3.traffic light model
+4.turn right/left model
+
+PS:
+1.Consider only straight at first
+2.Circle for the four intersections
+
+Initialization:
+spawn the number of robots at the beginning -- with certain probability
+
+Robots:
+Circular robots
+Unlimited range of sensor
+delay model for one robot
+
+Environments:
+Four intersections: Boundary design
+Number of lanes
+
+Cars roughly the highest speed -- assumption is good
+Delay -- measure the efficiency of the traffic system
+
+Delay model -- measure the performanc of the whole model (in robot class)
+
+Control policy:
+    Overpass model --
+    Traffic light model --
+    reservation system if possible --
+    
+Collision avoidance model --
+deterministic distance between the robot and robot
+accelerate and deccelerate model
+
+Update model
+Based on the observance distance
+update the new delay model of the whole class
+
+Cars on the straight direction not collide with each other -- no car interactions
+Green light with full speed or velocity

@@ -1,0 +1,89 @@
+1."2" is "1" "1" is "0"
+2.flag_robot - 1
+3.weight problem
+4.run the simulation based on non-weighted method
+
+Code structure -- function definition
+1.def map: design the map environment
+2.def p_direction: return the sign of x and y based on the x,y coordinates and force vector
+3.def theta: find the theta
+4.def line: work for the force vector
+5.def F_r2t: The force vector between robot and target
+6.def F_r2r: The force vector between robot and robot
+7.def weight: pending
+
+Class:
+1.robot class
+2.target class
+
+Method test case:
+1.Only local force vector -- finished
+2.local force vector + boundary model -- pending
+3.Add weight for the local force vector + boundary -- pending
+4.1 robot and 1 target -- test local force vector
+5.1 robot and 2 target --
+6.1 robot and 3 target --
+7.2 robot and 1 target --
+8.2 robot and 2 target --
+
+Function test case:
+1.test line
+2.test F_r2r
+3.test F_r2t
+4.test forcevector
+5.test All_forcevector
+
+PS:
+1.speed up the whole simulation time
+2.check out the force vector function F_r2t and F_r2r with the good values
+
+Weigth model problem:
+Finally we have the following weights:
+    a.wlk:robot to target
+    b.wlj:robot to robot
+    c.frb/ftb:robot/target to boundary
+PS:
+    a.design the range of the weight (0~1)?
+    b.design the level of the weight with different cases, wlk > wlj or wlk < wlj?
+
+Weight model:
+A:Generate the coefficient matrix -- finished
+B:Find the lost target based on the coefficient matrix -- target perspective
+C:Find the overlap robot based on the coefficient matrix -- robot perspective
+    design the weights of w_rt based on how many targets the robots already have got
+D:Measure the boundary model
+
+Problem:
+1.collision model with robot and target -- finished
+2.boundary model with both robot and target -- finished
+3.More complicated weight model --
+    Two model: lost target and lost robot
+For lost robot:
+1.predict-track
+    if yes:
+
+Result showing:
+1.documented source code
+2.graphs
+    2.1 graphs: 1/5, 1/2, 1, 4, 10
+3.video
+4.code and algorithm explanation, write from scratch
+1.random generation of the robot initialzing and target initializing positions
+2.automatically add number of targets
+3.robot and targets are generated with initializing ways
+
+Video record: Finished
+1.test 1, 1 robot and 1 target -- forcevector model
+2.test 2, 3 robots and 6 targets -- weight model
+3.test 3, 1 robot and 4 targets -- boundary model
+4.5 robots and 20 targets -- multi objects model
+
+Plot the figure:
+1.1 robot and 5 targets
+2.1 robot and 2 targets
+3.3 robots and 3 targets
+4.3 robots and 6 targets
+5.2 robots and 20 targets
+
+
+
