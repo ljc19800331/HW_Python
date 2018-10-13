@@ -1,7 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0081032e-2215-4be6-adb3-734c755b0b94" name="Default" comment="" />
+    <list default="true" id="0081032e-2215-4be6-adb3-734c755b0b94" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/.idea/NLP.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_1_test_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_1_test_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_1_train_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_2_test_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_2_test_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_2_train_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_3_test_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_3_test_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_3_train_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Decode.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Learn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Load.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Readme.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/Decode.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/Learn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/en_dev_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/en_dev_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/en_train_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/zh_dev_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/zh_dev_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/zh_train_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/hmmmodel.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/hmmoutput.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/en_dev_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/en_dev_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/en_train_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/zh_dev_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/zh_dev_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/zh_train_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/hmmdecode.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/hmmlearn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/hmmmodel.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/hmmoutput.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_dev.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_tagged_dev.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_tagged_train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train_0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train_1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train_2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train_3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/hmm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/README.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/catalan_corpus_dev_raw.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/catalan_corpus_dev_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/catalan_corpus_train_tagged.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/hmmdecode.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/hmmlearn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/brown.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw01_solution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw02_evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw02_solution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw03_evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw03_solution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw04_evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw04_solution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw05_evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw05_solution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw06_evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw06_solution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw07_evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw07_solution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw08_evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw08_solution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/note" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/words.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/HW_Python.iml" afterPath="$PROJECT_DIR$/.idea/HW_Python.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +93,20 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="note" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NLP/note">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -20,11 +114,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
     <option name="y" value="24" />
-    <option name="width" value="1375" />
-    <option name="height" value="876" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -59,7 +156,13 @@
       <pane id="Scratches" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -214,24 +317,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1375" height="876" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -242,5 +345,15 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/NLP/note">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

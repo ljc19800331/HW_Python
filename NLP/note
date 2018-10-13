@@ -1,0 +1,8 @@
+^(?!abc.*def$).*
+(?:[b-df-hj-np-tv-z][aeiou][b-df-hj-np-tv-z]'d)$
+re.sub(r'(?:_a)?\.([^.]*)$', r'_suff.\1', "long.file.name.jpg")
+([b-df-hj-np-tv-z])\1{2,}
+re.sub(r"(?:ate|ize|ify|able)$", "", "terrorize")
+
+ref:
+https://www.regular-expressions.info/lookaround.html
