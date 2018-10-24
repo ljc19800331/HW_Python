@@ -74,7 +74,7 @@ def related_words(word_interest, n):
 
 if __name__ == "__main__":
     word = 'play'
-    n  = 10
+    n = 10
     related_words(word, n)
 
 
