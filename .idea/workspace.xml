@@ -2,85 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0081032e-2215-4be6-adb3-734c755b0b94" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/.idea/NLP.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_1_test_raw.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_1_test_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_1_train_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_2_test_raw.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_2_test_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_2_train_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_3_test_raw.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_3_test_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Data/Data_3_train_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Decode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Learn.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Load.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/NLP_Midterm/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/Decode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/Learn.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/en_dev_raw.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/en_dev_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/en_train_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/zh_dev_raw.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/zh_dev_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/coding1-data-corpus/zh_train_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/hmmmodel.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_1/hmmoutput.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/en_dev_raw.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/en_dev_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/en_train_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/zh_dev_raw.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/zh_dev_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/coding1-data-corpus/zh_train_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/data.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/hmmdecode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/hmmlearn.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/hmmmodel.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_2/hmmoutput.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_dev.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_tagged_dev.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_tagged_train.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train_0.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train_1.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train_2.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/Brown_train_3.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_3/hmm.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/catalan_corpus_dev_raw.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/catalan_corpus_dev_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/catalan_corpus_train_tagged.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/hmmdecode.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/POS_EXP_4/hmmlearn.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/brown.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw01_solution.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw02_evaluate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw02_solution.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw03_evaluate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw03_solution.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw04_evaluate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw04_solution.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw05_evaluate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw05_solution.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw06_evaluate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw06_solution.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw07_evaluate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw07_solution.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw08_evaluate.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw08_solution.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/note" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/test.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/words.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw12_evaluate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NLP/hw12_solution.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/HW_Python.iml" afterPath="$PROJECT_DIR$/.idea/HW_Python.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NLP/hw11_solution.py" afterPath="$PROJECT_DIR$/NLP/hw11_solution.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -94,13 +21,25 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="note" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NLP/note">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="hw12_evaluate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NLP/hw12_evaluate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-65">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hw12_solution.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/NLP/hw12_solution.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding>
+                <element signature="e#70#101#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,11 +56,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/NLP/hw10_solution.py" />
+        <option value="$PROJECT_DIR$/NLP/hw10_evaluate.py" />
+        <option value="$PROJECT_DIR$/NLP/hw09_solution.py" />
+        <option value="$PROJECT_DIR$/NLP/hw11_evaluate.py" />
+        <option value="$PROJECT_DIR$/NLP/hw11_solution.py" />
+        <option value="$PROJECT_DIR$/NLP/hw12_evaluate.py" />
+        <option value="$PROJECT_DIR$/NLP/hw12_solution.py" />
+        <option value="$PROJECT_DIR$/NLP/test.py" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1855" />
-    <option name="height" value="1056" />
+    <option name="x" value="105" />
+    <option name="y" value="212" />
+    <option name="width" value="1335" />
+    <option name="height" value="616" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -138,8 +91,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HW_Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HW_Python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NLP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="HW_Python" />
@@ -152,22 +121,108 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/maguangshen/PycharmProjects/HW_Python/NLP/hw11_solution.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/NLP" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.hw12_evaluate">
+    <configuration default="false" name="hw11_evaluate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NLP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="HW_Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NLP/hw11_evaluate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="hw11_solution" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NLP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="HW_Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NLP/hw11_solution.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="hw10_evaluate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NLP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="HW_Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NLP/hw10_evaluate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NLP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="HW_Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NLP/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="hw12_evaluate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NLP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="HW_Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NLP/hw12_evaluate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -302,6 +357,22 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.hw11_evaluate" />
+      <item index="1" class="java.lang.String" itemvalue="Python.hw11_solution" />
+      <item index="2" class="java.lang.String" itemvalue="Python.hw10_evaluate" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.hw12_evaluate" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.hw12_evaluate" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+        <item index="2" class="java.lang.String" itemvalue="Python.hw11_evaluate" />
+        <item index="3" class="java.lang.String" itemvalue="Python.hw11_solution" />
+        <item index="4" class="java.lang.String" itemvalue="Python.hw10_evaluate" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -317,41 +388,221 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
+    <frame x="105" y="212" width="1335" height="616" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17911585" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39203084" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5965251" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39974293" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/NLP/note">
+    <entry file="file://$PROJECT_DIR$/NLP/hw11_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw10_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw10_evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/note">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/note">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/sklearn/datasets/samples_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2125">
+          <caret line="257" column="4" lean-forward="false" selection-start-line="257" selection-start-column="4" selection-end-line="257" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/sklearn/feature_extraction/text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="255" column="0" lean-forward="false" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw08_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw09_evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw09_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/NLP_Midterm/Decode.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/NLP_Midterm/Learn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/NLP_Midterm/Load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/matplotlib/artist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="880" column="0" lean-forward="false" selection-start-line="880" selection-start-column="0" selection-end-line="880" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="1657" column="4" lean-forward="false" selection-start-line="1657" selection-start-column="4" selection-end-line="1657" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw10_evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw10_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw11_evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw11_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#27#45#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow-dev/lib/python3.5/site-packages/nltk/corpus/reader/wordnet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="1532" column="0" lean-forward="false" selection-start-line="1532" selection-start-column="0" selection-end-line="1532" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw12_evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-65">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NLP/hw12_solution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding>
+            <element signature="e#70#101#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

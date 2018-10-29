@@ -1,5 +1,4 @@
 # Solution for homework 11
-
 import numpy as np
 from sklearn.decomposition import LatentDirichletAllocation as LDA
 from sklearn.preprocessing import MultiLabelBinarizer

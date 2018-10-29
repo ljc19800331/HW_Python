@@ -10,7 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ME555_Hw3-master" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/NLP" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.5.2 virtualenv at ~/tensorflow-dev" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
