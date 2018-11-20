@@ -1,66 +1,72 @@
+
 import numpy as np
-# from moving_average import spec
-from example1 import spec
 
-data = np.ones((10, 2))
-# data = np.random.uniform(size=(10, 1))
-data_shape = data.shape
-T = len(data)       # number of time step
+# Encode the words to make it in a list
+ENCODINGS = {
+    'he': np.array([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
+    'she': np.array([0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
+    'is': np.array([0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
+    'and': np.array([0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
+    'but': np.array([0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]),
+    'not': np.array([0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]),
+    'very': np.array([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]),
+    'tall': np.array([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]),
+    'fast': np.array([0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]),
+    'strong': np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]),
+    'short': np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]),
+    'slow': np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]),
+    'weak': np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
+}
 
-# Define the state dictionary
-vertices = spec['vertices']
-# vtx_names = list()
-# for i in vertices.keys():
-#     vtx_names.append(i)
+# Encode the sentences
+# Encode the sentence
+def encode_sentence(sentence):
+    encodings = [ENCODINGS[word.lower()] for word in sentence[:-1].split(' ')]
+    return np.array(encodings)
 
-# Define the key items and values
-Dict_state = dict()
-edges = spec['edges']
+sen_test = "She is strong and fast but not very tall."
+sen_encode_test = encode_sentence(sen_test)
+print(sen_encode_test)
 
-# Initialize the dictionary values
-for item in vertices:
-    node = vertices[item]['num_nodes']
-    value = np.zeros(node)
-    Dict_state[item] = value
+# generate data
+data = \
+[
+    ("She is strong and fast but not very tall.", 2),
+    ("He is slow but tall and very very strong.", 3),
+    ("She is not fast but slow.", -1),
+    ("He is slow and very weak.", -3)
+]
 
-# Initialize the memory --
-Dict_state['memory_in0'] = np.zeros(data_shape[1])
+# generate RNN
+# nnet = RNN(spec)
 
-for i in range(T):
+# encode data and apply rnn
+sentences = [x[0] for x in data]    # This is the items of each sentence
+targets = [x[1] for x in data]      # This is the ground truth
+scores = []                         # This is the score for the current results
 
-    Dict_state['input'] = data[i,:]
+for sentence in sentences:
+    x = encode_sentence(sentence)       # The encode data is a matrix
+    # result = nnet.apply(x)
+    # scores.append(result.ravel()[-1])
 
-    for item in edges:
-        source_id = item['source_id']
-        target_id = item['target_id']
-        weights = item['weights']
-        Dict_state[target_id] = Dict_state[target_id] + vertices[target_id]['activation'](np.matmul(Dict_state[source_id], weights) + vertices[target_id]['bias'])
-        # Dict_state[target_id] = vertices[target_id]['activation'](np.matmul(Dict_state[source_id], weights) + vertices[target_id]['bias'])
+if np.all(np.argsort(targets) == np.argsort(scores)):
+    print('Success.')
+else:
+    print('Not quite.')
 
-    memory = Dict_state['memory_out0']
-    print(Dict_state['output'])
 
-    for item in vertices:
-        node = vertices[item]['num_nodes']
-        value = np.zeros(node)
-        Dict_state[item] = value
-
-    Dict_state['memory_in0'] = memory
-
-truth = np.array([
-    [-1.02626227],
-    [-0.95136591],
-    [-0.98218756],
-    [-0.98431546],
-    [-0.98666519],
-    [-0.98744132],
-    [-0.98783109],
-    [-0.98801656],
-    [-0.98811267],
-    [-0.98816380]
-])
-
-# n = 1
-# data_cat = np.concatenate( (np.zeros((n, 1)), data[:-n, :]))
-# truth = (data + data_cat) / 2
-# print(truth)
+np.array([[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         ])

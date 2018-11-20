@@ -2,6 +2,7 @@ import numpy as np
 from hw13_solution import RNN
 
 def test_moving_average():
+
     # generate data
     data = np.random.uniform(size=(10, 1))
 
@@ -11,11 +12,13 @@ def test_moving_average():
 
     # apply RNN to data
     result = nnet.apply(data)
+    print(result)
 
     # generate truth
     def shift(arr, n=1):
         return np.concatenate((np.zeros((n, 1)), arr[:-n, :]))
     truth = (data + shift(data)) / 2
+    print(truth)
 
     # compare
     if np.all(truth - result < 1e-7):
@@ -23,10 +26,11 @@ def test_moving_average():
     else:
         print('Not quite.')
 
-
 def test_random():
+
     # generate data
     data = np.ones((10, 2))
+    # print(data)
 
     # generate RNN
     from example1 import spec
@@ -34,6 +38,7 @@ def test_random():
 
     # apply RNN
     result = nnet.apply(data)
+    print(result)
 
     # generate truth
     truth = np.array([
@@ -54,7 +59,6 @@ def test_random():
         print('Success.')
     else:
         print('Not quite.')
-
 
 if __name__ == "__main__":
     test_random()

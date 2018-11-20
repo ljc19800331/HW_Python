@@ -1,24 +1,20 @@
-
 import numpy as np
 
 np.random.seed(31)
+
 spec = {
-    "vertices":
-        {
-        "input":
-        {
+    "vertices": {
+        "input": {
             "num_nodes": 2,
             "activation": lambda x: x,
             "bias": 0
         },
-        "memory_in0":
-        {
+        "memory_in0": {
             "num_nodes": 2,
             "activation": lambda x: x,
             "bias": 0
         },
-        "h1":
-        {
+        "h1": {
             "num_nodes": 5,
             "activation": lambda x: 1 / (1 + np.exp(-x)),
             "bias": 0
