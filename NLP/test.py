@@ -1,72 +1,286 @@
+# Homework 15 NLP
+# The goal of this task:
+# Given a sentence, separate the sentence into different sytatic structure
+# Solve the ambiguity problem within this sentence
+# CKY algorithm for ambiguity solving
+# This homework assignment is from the github repository: https://github.com/RobMcH/CYK-Parser/blob/master/Parser.py
 
+from __future__ import print_function
+import sys
+import os.path
+import GrammarConverter
 import numpy as np
 
-# Encode the words to make it in a list
-ENCODINGS = {
-    'he': np.array([1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-    'she': np.array([0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-    'is': np.array([0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-    'and': np.array([0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]),
-    'but': np.array([0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]),
-    'not': np.array([0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]),
-    'very': np.array([0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]),
-    'tall': np.array([0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]),
-    'fast': np.array([0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]),
-    'strong': np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]),
-    'short': np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]),
-    'slow': np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]),
-    'weak': np.array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1])
-}
+class Node:
 
-# Encode the sentences
-# Encode the sentence
-def encode_sentence(sentence):
-    encodings = [ENCODINGS[word.lower()] for word in sentence[:-1].split(' ')]
-    return np.array(encodings)
+    # Used to save the node in the parse tree
+    def __init__(self, symbol, child1, child2 = None):
 
-sen_test = "She is strong and fast but not very tall."
-sen_encode_test = encode_sentence(sen_test)
-print(sen_encode_test)
+        # Save the symbols and its childs
+        self.symbol = symbol
+        self.child1 = child1
+        self.child2 = child2
 
-# generate data
-data = \
-[
-    ("She is strong and fast but not very tall.", 2),
-    ("He is slow but tall and very very strong.", 3),
-    ("She is not fast but slow.", -1),
-    ("He is slow and very weak.", -3)
-]
+    def __repr__(self):
 
-# generate RNN
-# nnet = RNN(spec)
+        # Print the current symbol
+        return self.symbol
 
-# encode data and apply rnn
-sentences = [x[0] for x in data]    # This is the items of each sentence
-targets = [x[1] for x in data]      # This is the ground truth
-scores = []                         # This is the score for the current results
+class Parser:
 
-for sentence in sentences:
-    x = encode_sentence(sentence)       # The encode data is a matrix
-    # result = nnet.apply(x)
-    # scores.append(result.ravel()[-1])
+    def __init__(self, grammar, sentence, rules):
 
-if np.all(np.argsort(targets) == np.argsort(scores)):
-    print('Success.')
-else:
-    print('Not quite.')
+        self.parse_table = None
+        self.prods = {}
+        self.grammar = None
+        self.grammar = []
+        self.pos = []
+        self.import_grammar(grammar)
+
+        # Read the grammar from files or single string
+        # if os.path.isfile(grammar):
+        #     self.grammar_from_file(grammar)
+        # else:
+        #     self.grammar_from_string(grammar)
+
+        # check the result from rules
+        # self.grammer_from_Rule(rules)
+
+        # Read the target sentence
+        self.__call__(sentence)
+
+    def __call__(self, sentence, parse=False):
+
+        # Parse the sentence given by user
+        if os.path.isfile(sentence):
+            with open(sentence) as inp:
+
+                # Read the sentence into single separated words
+                self.input = inp.readline().split()
+
+                if parse:
+                    self.parse()
+        else:
+            self.input = sentence.split()
+
+    def import_grammar(self, grammar):
+        for rule in grammar:
+            if type(rule.right) == tuple:
+                self.grammar.append(rule)
+            elif type(rule.right) == list:
+                self.pos.append(rule)
+
+    def grammer_from_Rule(self, rules):
+
+        # Read the rules in the sentence
+        # rules = 1
+        grammar = []
+        Res = []
+        # print(rules)
+
+        for item in rules:
+
+            test_use = item.use
+            # print("the test use is ",  test_use)
+
+            Res.append(test_use)
+
+        # print("The Res is ", Res)
+
+        grammar = [x.replace("->", "").split() for x in Res]
+        print("The Rule gramma is ", grammar)
+
+            # result = []
+            #
+            # # The left object
+            # left = item.left
+            # result.append(left)
+            #
+            # # The right object
+            # for x in item.right:
+            #     result.append(str(x))
+
+        #     grammar.append(result)
+        #
+        self.grammar = GrammarConverter.convert_grammar(grammar)
+
+        print("The Rule grammar is ", grammar)
 
 
-np.array([[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-         ])
+
+    def grammar_from_file(self, grammar):
+
+        # print("grammar from file")
+
+        print("The Gammar from file is ", GrammarConverter.read_grammar(grammar))
+
+        # The CNF processing
+        self.grammar = GrammarConverter.convert_grammar(GrammarConverter.read_grammar(grammar))
+
+        print("The File grammar is ", self.grammar)
+
+    def grammar_from_string(self, grammar):
+
+        print("grammar_from_string")
+        # print("The grammar is ", grammar)
+        # print([x.replace("->", "").split() for x in grammar.split("\n")])
+
+        self.grammar = GrammarConverter.convert_grammar([x.replace("->", "").split() for x in grammar.split("\n")])
+
+    def parse(self):
+
+        # The length of the input
+        length = len(self.input)
+
+        # Define the parse table
+        self.parse_table = [  [   [] for x in range(length - y)   ] for y in range(length)  ]
+
+        # print("The input is ", self.input)
+        # print("The grammar is ", self.grammar)
+
+        for i, word in enumerate(self.input):
+
+            # Find out which non terminals can generate the terminals in the input string
+            # and put them into the parse table. One terminal could be generated by multiple
+            # non terminals, therefore the parse table will contain a list of non terminals.
+
+            for rule in self.grammar:
+                print(rule[0])
+                print(('%s' % word))
+                print(rule[1])
+                if ('%s' % word) == rule[1]:
+                    self.parse_table[0][i].append(Node(rule[0], word))
+
+        print("The parse table is ", self.parse_table)
+
+        for words_to_consider in range(2, length + 1):
+            for starting_cell in range(0, length - words_to_consider + 1):
+                for left_size in range(1, words_to_consider):
+
+                    right_size = words_to_consider - left_size
+                    left_cell = self.parse_table[left_size - 1][starting_cell]
+                    right_cell = self.parse_table[right_size - 1][starting_cell + left_size]
+
+                    for rule in self.grammar:
+                        left_nodes = [n for n in left_cell if n.symbol == rule[1]]
+                        # print( rule[1] )
+                        # print(left_nodes)
+                        if left_nodes:
+                            right_nodes = [n for n in right_cell if n.symbol == rule[2]]
+                            self.parse_table[words_to_consider - 1][starting_cell].extend(
+                                [Node(rule[0], left, right) for left in left_nodes for right in right_nodes])
+
+    def print_tree(self, output=True):
+
+        start_symbol = self.grammar[0][0]
+
+        print("The final ")
+
+        print("The start symbol is ", start_symbol)
+
+        print("The parse table is ", self.parse_table)
+
+        final_nodes = [n for n in self.parse_table[-1][0] if n.symbol == start_symbol]
+
+        print("The final nodes is ", final_nodes)
+
+        if final_nodes:
+            if output:
+                print("The given sentence is contained in the language produced by the given "
+                      "grammar!")
+                print("\nPossible parse(s):")
+            trees = [generate_tree(node) for node in final_nodes]
+            if output:
+                for tree in trees:
+                    print(tree)
+            else:
+                return trees
+        else:
+            print("The given sentence is not contained in the language produced by the given "
+                  "grammar!")
+
+def generate_tree(node):
+
+    if node.child2 == None:
+
+        return "[{%s}'{%s}']" % (node.symbol, node.child1)
+
+    else:
+
+        return "[{%s} {%s} {%s}]" % (node.symbol, generate_tree(node.child1), generate_tree(node.child2))
+
+class Rule:
+
+    def __init__(self, left, right):
+        self.left = left
+        self.right = right
+        test = " %s -> %s" % (self.left, self.right)
+
+        res_1 = []
+        res_1.append(self.left)
+        res_1.append('->')
+        test = str()
+
+        for item in self.right:
+            res_1.append(item)
+
+        for item in res_1:
+            test += str(item) + " "
+
+        self.use = test
+
+        # return test
+
+        # print(res_1)
+        # print("The test is", test)
+
+        # print(" %s -> %s" % (self.left, self.right))
+        # print(test.replace("->", "").split())
+        # test_1 = [item for item in self.right]
+        # print(str(self.left) + '->' + test_1[0] )
+
+    def __str__(self):
+        # Print the function
+        return "{%s} -> {%s}" % (self.left, self.right)
+
+def ReadRules():
+
+    rules = [
+        Rule('S', ['NP', 'VP']),
+        Rule('NP', ['Det', 'Nominal']),
+        Rule('Nominal', ['Nominal', 'PP']),
+        Rule('VP', ['Verb', 'NP']),
+        Rule('VP', ['X2', 'PP']),
+        Rule('VP', ['VP', 'PP']),
+        Rule('X2', ['Verb', 'NP']),
+        Rule('PP', ['Preposition', 'NP']),
+        Rule('NP', ['I', 'pajamas']),
+        Rule('Det', ['the', 'a', 'an']),
+        Rule('Nominal', ['elephant', 'rhinoceros']),
+        Rule('Verb', ['shot', 'rode']),
+        Rule('Preposition', ['in', 'on'])
+    ]
+
+    # rules = [
+    #     Rule('S', ['NP', 'VP']),
+    #     Rule('PP', ['P', 'NP']),
+    #     Rule('NP', ['Det', 'N']),
+    #     Rule('NP', ['Det', 'N', 'PP']),
+    #     Rule('NP', ['I']),
+    #     Rule('VP', ['V', 'NP']),
+    #     Rule('VP', ['VP', 'PP']),
+    #     Rule('Det', ['an']),
+    #     Rule('Det', ['my']),
+    #     Rule('N', ['elephant']),
+    #     Rule('N', ['pajamas']),
+    #     Rule('V', ['shot']),
+    #     Rule('P', ['in'])
+    # ]
+
+    return rules
+
+if __name__ == "__main__":
+
+    parser = Parser(rules, data)
+    parser.parse()
+    parser.print_tree()

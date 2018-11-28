@@ -1,0 +1,13 @@
+S -> NP VP
+NP -> Det Nominal
+Nominal -> Nominal PP
+VP -> Verb NP
+VP -> X2 PP
+VP -> VP PP
+X2 -> Verb NP
+PP -> Preposition NP
+NP -> I pajamas
+Det -> the a an
+Nominal -> elephant rhinoceros
+Verb -> shot rode
+Preposition -> in on
